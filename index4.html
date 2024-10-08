@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación en Visual Basic 6.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ffc107;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            width: 70%;
+        }
+        aside {
+            width: 30%;
+            padding-left: 20px;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Programación en Visual Basic 6.0</h1>
+</header>
+
+<nav>
+    <a href="Página Principal.html">Inicio</a>
+    <a href="Diseno Web.html">Diseño Web</a>
+    <a href="Soporte Técnico.html">Soporte Técnico</a>
+    <a href="Programación.html">Programación</a>
+    <a href="Sistemas Operativos.html">Sistemas Operativos</a>
+    <a href="Aplicaciones Ofimáticas.html">Aplicaciones Ofimáticas</a>
+    <a href="FOL.html">FOL</a>
+</nav>
+
+
+<main>
+    <section>
+        <h2>Introducción a Visual Basic 6.0</h2>
+        <p>Visual Basic 6.0 es un lenguaje de programación desarrollado por Microsoft, lanzado en 1998. Se utiliza principalmente para el desarrollo de aplicaciones de Windows. A través de su interfaz gráfica intuitiva, permite a los programadores crear aplicaciones de forma rápida y eficiente, utilizando componentes visuales que simplifican el proceso de desarrollo.</p>
+
+        <h3>Herramientas de Visual Basic 6.0</h3>
+        <p>Visual Basic 6.0 cuenta con una variedad de herramientas y características que facilitan la programación:</p>
+        <ul>
+            <li><strong>Entorno de Desarrollo Integrado (IDE):</strong> Proporciona un espacio para escribir, editar y depurar el código.</li>
+            <li><strong>Formularios:</strong> Permiten crear interfaces de usuario mediante la disposición de controles visuales.</li>
+            <li><strong>Controles:</strong> Incluyen botones, cuadros de texto, listas, y otros elementos que los usuarios pueden interactuar.</li>
+            <li><strong>Depurador:</strong> Ayuda a identificar y corregir errores en el código.</li>
+            <li><strong>Conexión a bases de datos:</strong> Permite integrar aplicaciones con bases de datos utilizando ADO (ActiveX Data Objects).</li>
+        </ul>
+
+        <h3>Programación Orientada a Objetos (POO)</h3>
+        <p>La Programación Orientada a Objetos es un paradigma que organiza el software en "objetos", que son instancias de clases. Visual Basic 6.0 soporta la POO, lo que permite:</p>
+        <ul>
+            <li><strong>Encapsulamiento:</strong> Proteger los datos del objeto y exponer solo lo necesario a través de métodos.</li>
+            <li><strong>Herencia:</strong> Permitir que una clase derive de otra, heredando atributos y métodos, lo que facilita la reutilización del código.</li>
+            <li><strong>Polimorfismo:</strong> Habilitar métodos con el mismo nombre en diferentes clases, adaptándose según la instancia que los invoque.</li>
+        </ul>
+
+        <h3>Ejemplo de POO en Visual Basic 6.0</h3>
+        <p>A continuación se muestra un ejemplo de cómo se puede implementar la POO en Visual Basic 6.0:</p>
+        <pre><code>
+' Definición de una clase
+Public Class Persona
+    Private nombre As String
+    Private edad As Integer
+
+    ' Constructor
+    Public Sub New(n As String, e As Integer)
+        nombre = n
+        edad = e
+    End Sub
+
+    ' Método para mostrar información
+    Public Sub MostrarInfo()
+        MsgBox "Nombre: " & nombre & vbCrLf & "Edad: " & edad
+    End Sub
+End Class
+
+' Uso de la clase en un formulario
+Dim persona1 As Persona
+Set persona1 = New Persona("Juan", 30)
+persona1.MostrarInfo()
+        </code></pre>
+        <p>En este ejemplo, se define una clase <strong>Persona</strong> con un constructor que inicializa el nombre y la edad. Luego, hay un método que muestra esta información mediante un cuadro de mensaje. Finalmente, se crea un objeto de la clase y se llama al método para mostrar los datos.</p>
+
+        <h3>Ventajas de Visual Basic 6.0 y la POO</h3>
+        <p>Utilizar Visual Basic 6.0 y la POO ofrece varias ventajas:</p>
+        <ul>
+            <li><strong>Facilidad de uso:</strong> La interfaz gráfica simplifica el proceso de creación de aplicaciones.</li>
+            <li><strong>Rápido desarrollo:</strong> Permite crear prototipos y aplicaciones funcionales en menos tiempo.</li>
+            <li><strong>Reutilización de código:</strong> Las clases y objetos pueden ser reutilizados en diferentes proyectos, lo que ahorra tiempo y recursos.</li>
+            <li><strong>Mantenimiento:</strong> Facilita la modificación y mejora de aplicaciones, ya que los cambios en las clases no afectan a otras partes del código.</li>
+        </ul>
+    </section>
+
+    <aside>
+        <img src="Programación.png" alt="Visual Basic 6.0"  width="300" height="200">
+    </aside>
+</main>
+
+</body>
+</html>
+
